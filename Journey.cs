@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CsharpAssignment_2
+namespace Assignment_22ndOctober
 {
     class Journey
     {
