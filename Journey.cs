@@ -4,17 +4,17 @@ using System.Text;
 
 namespace Assignment_22ndOctober
 {
-    class Journey
+    class journey
     {
         private double hrs;   
         private double min;  
         private double sec;
 
-        public Journey()
+        public journey()
         {
         }
 
-        public Journey(int hrs,int min,int sec)
+        public journey(int hrs,int min,int sec)
         {
             this.hrs = hrs;
             this.min = min;
@@ -27,29 +27,29 @@ namespace Assignment_22ndOctober
         
 
         
-        public static Journey operator -(Journey j1, Journey j2)
+        public static journey operator -(journey j1, journey j2)
         {
-            Journey J = new Journey();
-            J.hrs = j1.hrs - j2.hrs;
-            J.min = j1.min - j2.min;
-            J.sec = j1.sec - j2.sec;
+            journey Jour = new journey();
+            Jour.hrs = j1.hrs - j2.hrs;
+            Jour.min = j1.min - j2.min;
+            Jour.sec = j1.sec - j2.sec;
             return J;
         }
     }
-    class Tester
+    class Test
     {
         static void Main(string[] args)
         {
-            Journey j1 = new Journey(10,20,30); 
-            Console.WriteLine($"Departure Time is ");
+            journey j1 = new journey(10,20,30); 
+            Console.WriteLine($"Departure Time: ");
             j1.Show();
-            Journey j2 = new Journey(5,4,20);  // 
-            Console.WriteLine($"Arrival Time is ");
+            journey j2 = new journey(5,4,20);  // 
+            Console.WriteLine($"Arrival Time: ");
             j2.Show();
-            Journey j3 = new Journey();   // 
+            journey j3 = new journey();   // 
            
             j3 = j1 - j2;
-            Console.WriteLine("Journey Time is ");
+            Console.WriteLine("Journey Time:");
             j3.Show();
 
             
